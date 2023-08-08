@@ -3,25 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css">
     <title>Cardapio Doceria 2</title>
 </head>
 </head>
 <body>
+    <div class="topo">
+        <div class="h1carrinho">
+            <h1>Sorveteria</h1>
+            <ion-icon id="cart-btn" name="cart-outline" onclick="toggleCart()"></ion-icon> 
+          </div>
+        
+          <div id="cart">
+            <h2>Carrinho</h2>
+            <ul id="cart-items"></ul>
+            <p>Total: R$<span id="cart-total">0</span></p>
+            <button onclick="clearCart()">Limpar Carrinho</button>
+          </div>
 
-  <div class="h1carrinho">
-    <h1>Nome da sorveteria</h1>
-    <button id="cart-btn" onclick="toggleCart()">Carrinho</button>
-  </div>
+          <div class="redesSociais">
+            <ion-icon class="redes" name="logo-whatsapp"></ion-icon>
+            <ion-icon class="redes" name="logo-instagram"></ion-icon>
+            <ion-icon class="redes" name="logo-twitter"></ion-icon>
+            <ion-icon class="redes" name="mail-outline"></ion-icon>
+          </div>
+    </div>
 
-
-
-  <div id="cart">
-    <h2>Carrinho</h2>
-    <ul id="cart-items"></ul>
-    <p>Total: R$<span id="cart-total">0</span></p>
-    <button onclick="clearCart()">Limpar Carrinho</button>
-  </div>
+  
   
   
   <div class="menu">

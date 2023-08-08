@@ -5,8 +5,17 @@
     font-family: Arial, sans-serif;
   
   }
-  
+
+  .topo {
+    margin-top: -15px;
+    background-image: url(img/pexels-sơn-bờm-1819711.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+  }
+
   .h1carrinho {
+    padding-top: 20px;
     margin: 15px;
     display: flex;
     justify-content: space-around;
@@ -14,31 +23,45 @@
   
   h1 {
     text-align: center;
-    color: #333;
+    background: transparent;
+    color: #fff;
+    font-size: 50px;
   } 
+
+  .redesSociais {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 300px;
+    padding-right: 100px;
+    color: #fff;
+  }
+
+  .redes {
+    margin: 20px;
+    font-size: 25px;
+  }
   
   #cart-btn {
     display: block;
-    background-color: #333;
-    padding: 13px;
     color: #fff;
-    border: none;
-    border-radius: 5px;
     cursor: pointer;
+    font-size: 50px;
   }
   
   #cart-btn:hover {
-    background-color: #555;
     transform: translatey(-1px);
     transition: 0.5s all;
   }
   
   
   #cart {
+    margin: auto;
     display: none;
+    width: 80%;
     border: 2px solid #333;
+    align-items: center;
+    text-align: center;
     border-radius: 5px;
-  
     padding: 10px;
     margin-top: 20px;
   }
@@ -85,6 +108,7 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px;
+    margin-top: 50px;
   }
   
   .menu2 {
@@ -150,6 +174,19 @@
   
   @media (max-width: 700px) {
 
+    .topo {
+        height: 30vh;
+    }
+
+    .redesSociais {
+        padding-right: 10px;
+        padding-top: 130px;
+    }
+
+    .redes {
+        margin: 15px;
+    }
+
     .item {
         width: 150px;
         padding: 10px;
@@ -168,8 +205,30 @@
        margin-left: 35px;
     }
 
-    .item button {
-        padding: 5px;
+    #cart-btn {
+        font-size: 40px;
     }
 
+    h1 {
+        font-size: 30px;
+      } 
+
+    #cart {
+        background-color: #4589b1;
+        margin: auto;
+        width: 80%;
+        align-items: center;
+        text-align: center;
+    }
+
+    #cart button {
+        padding: 8px;
+        background-color: #333;
+        border: 1px solid black;
+        color: #fff;
+    }
+
+    #cart button:hover {
+        background-color: #666;
+    }
   }  
