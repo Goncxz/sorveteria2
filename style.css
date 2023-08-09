@@ -31,7 +31,7 @@
   .redesSociais {
     display: flex;
     justify-content: flex-end;
-    padding-top: 300px;
+    padding-top: 200px;
     padding-right: 100px;
     color: #fff;
   }
@@ -40,6 +40,25 @@
     margin: 20px;
     font-size: 25px;
   }
+
+  .redes:hover {
+    transform: translatey(-5px);
+    transition: 0.5s all;
+}
+
+.menuOpcoes {
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  background-color: #333;
+}
+
+.menuOpcoes a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  margin: 30px;
+}
   
   #cart-btn {
     display: block;
@@ -119,6 +138,7 @@
   }
   
   .item {
+    text-align: center;
     width: 300px;
     border-radius: 5px;
     background-color: #fff;
@@ -136,6 +156,14 @@
     width: 100%;
     border-radius: 5px;
     margin-bottom: 10px;
+  }
+
+  #img2 {
+    height: 52.8vh;
+  }
+
+  #img3 {
+    height: 53vh;
   }
   
   .item h2 {
@@ -187,6 +215,11 @@
         margin: 15px;
     }
 
+    .redes:hover {
+        transform: translatey(-5px);
+        transition: 0.5s all;
+    }
+
     .item {
         width: 150px;
         padding: 10px;
@@ -231,4 +264,18 @@
     #cart button:hover {
         background-color: #666;
     }
+
+    .menuOpcoes {
+      padding: 5px;
+    }
+
+    #img2 {
+      height: 21.5vh;
+    }
+
+    #img3 {
+      height: 21.5vh;
+    }
+
+    
   }  
