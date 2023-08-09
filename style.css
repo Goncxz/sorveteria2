@@ -208,11 +208,11 @@
 
     .redesSociais {
         padding-right: 10px;
-        padding-top: 130px;
+        padding-top: 110px;
     }
 
     .redes {
-        margin: 15px;
+        margin: 13px;
     }
 
     .redes:hover {
@@ -268,14 +268,22 @@
     .menuOpcoes {
       padding: 5px;
     }
+    
+    ul {
+      display: flex;
+    }
+
+    .menuOpcoes a{
+      margin: 15px;
+    }
 
     #img2 {
-      height: 21.5vh;
+      height: 26.2vh;
     }
 
     #img3 {
-      height: 21.5vh;
+      height: 26.2vh;
     }
 
-    
+
   }  
